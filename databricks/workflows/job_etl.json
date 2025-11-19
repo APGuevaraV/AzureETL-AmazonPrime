@@ -1,0 +1,51 @@
+{
+  "created_time":1763572167894,
+  "creator_user_name":"ana.guevara.valladares_gmail.com#ext#@anaguevaravalladaresgmail.onmicrosoft.com",
+  "job_id":994926366542263,
+  "run_as_user_name":"ana.guevara.valladares_gmail.com#ext#@anaguevaravalladaresgmail.onmicrosoft.com",
+  "settings": {
+    "email_notifications": {
+      "no_alert_for_skipped_runs":false
+    },
+    "format":"MULTI_TASK",
+    "max_concurrent_runs":1,
+    "name":"ETL",
+    "performance_target":"PERFORMANCE_OPTIMIZED",
+    "queue": {
+      "enabled":true
+    },
+    "tasks": [
+      {
+        "email_notifications": {},
+        "existing_cluster_id":"1119-171124-b4ie95vl",
+        "notebook_task": {
+          "notebook_path":"/Workspace/Users/ana.guevara.valladares_gmail.com#ext#@anaguevaravalladaresgmail.onmicrosoft.com/AmazonPrime/Silver_Transformation",
+          "source":"WORKSPACE"
+        },
+        "run_if":"ALL_SUCCESS",
+        "task_key":"silver_layer",
+        "timeout_seconds":0,
+        "webhook_notifications": {}
+      },
+      {
+        "depends_on": [
+          {
+            "task_key":"silver_layer"
+          }
+        ],
+        "email_notifications": {},
+        "existing_cluster_id":"1119-171124-b4ie95vl",
+        "notebook_task": {
+          "notebook_path":"/Workspace/Users/ana.guevara.valladares_gmail.com#ext#@anaguevaravalladaresgmail.onmicrosoft.com/AmazonPrime/Golden_Transformation",
+          "source":"WORKSPACE"
+        },
+        "run_if":"ALL_SUCCESS",
+        "task_key":"golden_layer",
+        "timeout_seconds":0,
+        "webhook_notifications": {}
+      }
+    ],
+    "timeout_seconds":0,
+    "webhook_notifications": {}
+  }
+}
