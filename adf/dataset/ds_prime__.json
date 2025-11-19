@@ -1,0 +1,20 @@
+{
+    "linkedServiceName": {
+        "referenceName": "ls_adlssmart1211",
+        "type": "LinkedServiceReference"
+    },
+    "annotations": [],
+    "type": "DelimitedText",
+    "typeProperties": {
+        "location": {
+            "type": "AzureBlobFSLocation",
+            "fileName": "amazon_prime_titles.csv",
+            "fileSystem": "bronze"
+        },
+        "columnDelimiter": ",",
+        "escapeChar": "\\",
+        "firstRowAsHeader": true,
+        "quoteChar": "\""
+    },
+    "schema": []
+}
