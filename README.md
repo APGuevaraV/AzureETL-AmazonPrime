@@ -4,7 +4,7 @@ Proyecto ETL construido con **Azure Data Factory**, **Azure Databricks** y **Azu
 
 
 
-## 🚀 **Arquitectura General del Proyecto**
+## **Arquitectura General del Proyecto**
 
 Este proyecto implementa un flujo ETL completo:
 
@@ -24,7 +24,7 @@ Este proyecto implementa un flujo ETL completo:
     
     -   Pipelines de Databricks controlan la ejecución end-to-end.
 
-🗂️ **Estructura del Repositorio**
+**Estructura del Repositorio**
 
 ```txt
 ├── dataset/    
@@ -56,7 +56,7 @@ Este proyecto implementa un flujo ETL completo:
 
 
 
-## 🧱 **1. Azure Data Factory – Artefactos**
+## **1. Azure Data Factory – Artefactos**
 
 En la carpeta **/adf** se incluyen los JSON exportados:
 
@@ -77,11 +77,11 @@ En la carpeta **/adf** se incluyen los JSON exportados:
     -   `ls_adlssmart1211.json`
         
 
-## 🧬 **2. Azure Databricks – Transformaciones**
+## **2. Azure Databricks – Transformaciones**
 
 Los notebooks ejecutan dos transformaciones principales:
 
-### ✔ Bronze → Silver
+###  Bronze → Silver
 
 -   Limpieza
     
@@ -92,7 +92,7 @@ Los notebooks ejecutan dos transformaciones principales:
 -   Estandarización de formatos
     
 
-### ✔ Silver → Gold
+###  Silver → Gold
 
 -   Agregaciones
     
@@ -101,7 +101,7 @@ Los notebooks ejecutan dos transformaciones principales:
 -   Preparación para analítica
 
 
-## 📦 **3. Azure Data Lake – Organización**
+## **3. Azure Data Lake – Organización**
 
 El Data Lake se divide en 3 capas:
 /bronze   → Datos crudos (ingestados)
@@ -110,7 +110,7 @@ El Data Lake se divide en 3 capas:
 
 
 
-## 🔄 **Flujo ETL Completo**
+## **Flujo ETL Completo**
 
 1.  ADF copia el dataset de GitHub → ADLS/Bronze.
     
@@ -122,4 +122,4 @@ El Data Lake se divide en 3 capas:
 
 
 ## Arquitectura propuesta
-![Descripción de la imagen](docs/arquitectura.png)
+![Descripción de la imagen](docs/architecture.png)
