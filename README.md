@@ -119,3 +119,7 @@ El Data Lake se divide en 3 capas:
 3.  Databricks genera el dataset Golden.
     
 4.  Automatización con Jobs de Databricks
+
+
+## Arquitectura propuesta
+![Descripción de la imagen](docs/arquitectura.png)
