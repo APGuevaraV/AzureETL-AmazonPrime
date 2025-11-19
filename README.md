@@ -26,7 +26,7 @@ Este proyecto implementa un flujo ETL completo:
 
 🗂️ **Estructura del Repositorio**
 
-.
+```txt
 ├── dataset/    
 ├── adf/                      
 │   ├── pipeline/             
@@ -50,6 +50,8 @@ Este proyecto implementa un flujo ETL completo:
 │   └── arquitectura.png
 │
 └── README.md
+```
+
 
 
 
